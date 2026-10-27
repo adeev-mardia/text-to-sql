@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+*.db-journal
+.DS_Store
+
+# The example database is generated (deterministically) by
+# examples/build_db.py - run it after cloning rather than committing a
+# binary file to the repo.
+examples/store.db

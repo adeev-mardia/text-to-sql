@@ -1,0 +1,13 @@
+{
+  "tables": {
+    "customers": ["client", "clients", "buyer", "buyers", "shopper", "shoppers"],
+    "order_items": ["line item", "line items"]
+  },
+  "columns": {},
+  "label_columns": {
+    "categories": "name",
+    "customers": "name",
+    "products": "name",
+    "orders": "status"
+  }
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text-to-sql"
+version = "0.1.0"
+description = "A natural-language-to-SQL agent with a schema-grounded rule-based parser and execution-based self-correction."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Adeev Mardia" }]
+
+[project.scripts]
+text-to-sql = "text_to_sql.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
