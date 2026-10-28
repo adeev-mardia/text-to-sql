@@ -8,7 +8,6 @@ retries with a fixed query. A pluggable LLM backend can be wired in for
 free-form questions the offline parser can't handle.
 
 ```
-$ python examples/build_db.py
 $ text-to-sql examples/store.db -q "which customer has the highest total spending?"
 SQL: SELECT "customers"."name", SUM("order_items"."quantity" * "order_items"."unit_price") AS result
      FROM "customers"
